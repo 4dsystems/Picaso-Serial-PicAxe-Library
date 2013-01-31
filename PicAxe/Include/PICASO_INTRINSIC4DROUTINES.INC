@@ -35,6 +35,6 @@ InvalidResponse:
 ' GetAckResStr    - code inline with amount of data expected to be read specified with timeout
 ' GetAckResSector - PicAxe does not have enough memory to support this
 '
-' Both the 'cone inline' recommendations are because coding in a loop may be too slow for PicAxe to keep up
+' Both the 'code inline' recommendations are because coding in a loop may be too slow for PicAxe to keep up
 ' with the received data, increasing the serial delay in SPE might help with this at the expense of slowing
 ' down all transfers
