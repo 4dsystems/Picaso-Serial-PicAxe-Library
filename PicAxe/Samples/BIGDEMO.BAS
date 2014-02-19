@@ -1073,7 +1073,7 @@ symbol lYELLOWGREEN           = $66     ' low byte
   	serout 1, T38400_32, (hF_gfx_Contrast, lF_gfx_Contrast, 0, 0) ;
 	gosub	getAckResp
       pause 8000
-  	serout 1, T38400_32, (hF_gfx_Contrast, lF_gfx_Contrast, 0 ,1) ;
+  	serout 1, T38400_32, (hF_gfx_Contrast, lF_gfx_Contrast, 0 ,15) ;
 	gosub	getAckResp
 	sertxd("Display on", CR, LF)
   	serout 1, T38400_32, (hF_gfx_Ellipse, lF_gfx_Ellipse, 0,100, 0,230, 0,50, 0,30, hRED, lRED) ;
