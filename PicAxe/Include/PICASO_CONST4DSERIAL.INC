@@ -1,6 +1,7 @@
 '
 ' Serial 4D Constants, needs to be inserted into your PicAxe Program until such time as PicAxe supports includes
 '
+' SPE Version 1.2 added peekM and pokeM functions
 ' SPE Version 1.1 added bus_ and pin_ functions
 symbol hF_bus_In = $FF
 symbol lF_bus_In = $D3
@@ -208,6 +209,8 @@ symbol hF_mem_Free = $FF
 symbol lF_mem_Free = $24
 symbol hF_mem_Heap = $FF
 symbol lF_mem_Heap = $23
+symbol hF_peekM = $00
+symbol lF_peekM = $27
 symbol hF_pin_HI = $FF
 symbol lF_pin_HI = $D6
 symbol hF_pin_LO = $FF
@@ -216,6 +219,8 @@ symbol hF_pin_Read = $FF
 symbol lF_pin_Read = $D4
 symbol hF_pin_Set = $FF
 symbol lF_pin_Set = $D7
+symbol hF_pokeM = $00
+symbol lF_pokeM = $28
 symbol hF_putCH = $FF
 symbol lF_putCH = $FE
 symbol hF_putstr = $00
